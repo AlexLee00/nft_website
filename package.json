@@ -8,8 +8,12 @@
     "url": "git+https://github.com/AlexLee00/nft_website.git"
   },
   "scripts": {
+    "start": "node build/server.js",
+    "build": "npm run build:server & npm run build:assets",
+    "build:server": "babel src -d build",
+    "build:assets": "webpack --mode=production",
     "dev:server": "nodemon",
-    "dev:assets": "webpack"
+    "dev:assets": "webpack --mode=development -w"
   },
   "author": "Alex Lee<blockchainmaster@naver.com>",
   "license": "MIT",
