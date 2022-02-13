@@ -1,0 +1,50 @@
+header.transparent.header-light.scroll-light
+  .container
+    .row
+      .col-md-12
+        .de-flex.sm-pt10
+          .de-flex-col
+            .de-flex-col
+              // logo begin
+              #logo
+                a(href='/')
+                  img.logo-2(alt='', src='images/logo.png')
+              // logo close
+            .de-flex-col
+              input#quick_search.xs-hide.style-2(name='quick_search', placeholder='search item here...', type='text')
+          .de-flex-col.header-col-mid
+            // mainmenu begin
+            ul#mainmenu
+              li
+                a(href='/')
+                  | Home
+                  span
+              li
+                a(href='explore')
+                  | Explore
+                  span
+              li
+                a(href='rankings')
+                  | Rankings
+                  span
+              li
+                a(href='#')
+                  | Community 
+                  span
+                ul
+                  li
+                    a(href='/news') News
+                  li
+                    a(href='/gallery') Gallery
+                  li
+                    a(href='/contact') Contact Us
+                  li
+                    a(href='/help') Help Center
+            .menu_side_area
+              a.btn-main.btn-wallet.mr10(href='login')
+                i.icon_wallet_alt
+                span LogIn
+              a.btn-main.btn-wallet(href='wallet')
+                i.icon_wallet_alt
+                span Connect Wallet
+              span#menu-btn

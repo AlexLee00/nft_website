@@ -1,0 +1,37 @@
+// content begin
+#content.no-bottom.no-top
+  #top
+  section.full-height.relative.no-top.no-bottom.vertical-center(data-bgimage='url(images/background/subheader.jpg) top', data-stellar-background-ratio='.5')
+    .overlay-gradient.t50
+      .center-y.relative
+        .container
+          .row.align-items-center
+            .col-lg-5.text-light.wow.fadeInRight(data-wow-delay='.5s')
+              .spacer-10
+              h1 Create, sell or collect digital items.
+              p.lead
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
+            .col-lg-4.offset-lg-2.wow.fadeIn(data-wow-delay='.5s')
+              .box-rounded.padding40(data-bgcolor='#ffffff')
+                h3.mb10 Sign In
+                p
+                  | Login using an existing account or create a new account 
+                  a(href='register.html')
+                    | here
+                    span
+                  | .
+                form#contact_form.form-border(name='contactForm', method='post', action='blank.php')
+                  .field-set
+                    input#email.form-control(type='text', name='email', placeholder='username')
+                  .field-set
+                    input#password.form-control(type='password', name='password', placeholder='password')
+                  .field-set
+                    input#send_message.btn.btn-main.btn-fullwidth.color-2(type='submit', value='Submit')
+                  .clearfix
+                  .spacer-single
+                  // social icons
+                  ul.list.s3
+                    li
+                      a(href='register') Create Account
+                  // social icons close
+// content close

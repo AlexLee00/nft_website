@@ -1,0 +1,55 @@
+// content begin
+#content.no-bottom.no-top
+  #top
+  // section begin
+  section#subheader.text-light(data-bgimage='url(images/background/subheader.jpg) top')
+    .center-y.relative.text-center
+      .container
+        .row
+          .col-md-12.text-center
+            h1 Register
+            p Anim pariatur cliche reprehenderit
+          .clearfix
+  // section close
+  section(aria-label='section')
+    .container
+      .row
+        .col-md-8.offset-md-2
+          h3 Don&apos;t have an account? Register now.
+          p
+            | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          .spacer-10
+          form#contact_form.form-border(name='contactForm', method='post', action='blank.php')
+            .row
+              .col-md-6
+                .field-set
+                  label Name:
+                  input#name.form-control(type='text', name='name')
+              .col-md-6
+                .field-set
+                  label Email Address:
+                  input#email.form-control(type='text', name='email')
+              .col-md-6
+                .field-set
+                  label Choose a Username:
+                  input#username.form-control(type='text', name='username')
+              .col-md-6
+                .field-set
+                  label Phone:
+                  input#phone.form-control(type='text', name='phone')
+              .col-md-6
+                .field-set
+                  label Password:
+                  input#password.form-control(type='text', name='password')
+              .col-md-6
+                .field-set
+                  label Re-enter Password:
+                  input#re-password.form-control(type='text', name='re-password')
+              .col-md-12
+                #submit.pull-left
+                  input#send_message.btn.btn-main.color-2(type='submit', value='Register Now')
+                #mail_success.success Your message has been sent successfully.
+                #mail_fail.error Sorry, error occured this time sending your message.
+                .clearfix
+// content close
+a#back-to-top(href='#')

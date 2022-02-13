@@ -1,0 +1,12 @@
+export const main = (req, res) => res.render("index");
+export const explore = (req, res) => res.render("explore");
+export const see = (req, res) => res.render("see");
+export const detail = (req, res) => res.render("detail");
+export const rankings = (req, res) => res.render("rankings");
+export const news = (req, res) => res.render("news");
+export const gallery = (req, res) => res.render("gallery");
+export const contact = (req, res) => res.render("contact");
+export const help = (req, res) => res.render("help");
+export const edit = (req, res) => res.render("edit");
+export const remove = (req, res) => res.send("Remove Item");
+export const upload = (req, res) => res.send("Upload Item");

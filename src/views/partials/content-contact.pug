@@ -1,0 +1,65 @@
+// content begin
+#content.no-bottom.no-top
+  #top
+  // section begin
+  section#subheader.text-light(data-bgimage='url(images/background/subheader.jpg) top')
+    .center-y.relative.text-center
+      .container
+        .row
+          .col-md-12.text-center
+            h1 Contact Us
+            p Anim pariatur cliche reprehenderit
+          .clearfix
+  // section close
+  section(aria-label='section')
+    .container
+      .row
+        .col-lg-8.mb-sm-30
+          h3 Do you have any question?
+          form#contact_form.form-border(name='contactForm', method='post', action='email.php')
+            .field-set
+              input#name.form-control(type='text', name='name', placeholder='Your Name')
+            .field-set
+              input#email.form-control(type='text', name='email', placeholder='Your Email')
+            .field-set
+              input#phone.form-control(type='text', name='phone', placeholder='Your Phone')
+            .field-set
+              textarea#message.form-control(name='message', placeholder='Your Message')
+            .spacer-half
+            #submit
+              input#send_message.btn.btn-main(type='submit', value='Submit Form')
+            #mail_success.success Your message has been sent successfully.
+            #mail_fail.error Sorry, error occured this time sending your message.
+        .col-lg-4
+          .padding40.box-rounded.mb30(data-bgcolor='#F2F6FE')
+            h3 US Office
+            address.s1
+              span
+                i.id-color.fa.fa-map-marker.fa-lg
+                | 08 W 36th St, New York, NY 10001
+              span
+                i.id-color.fa.fa-phone.fa-lg
+                | +1 333 9296
+              span
+                i.id-color.fa.fa-envelope-o.fa-lg
+                a(href='mailto:contact@example.com') contact@example.com
+              span
+                i.id-color.fa.fa-file-pdf-o.fa-lg
+                a(href='#') Download Brochure
+          .padding40.bg-color.text-light.box-rounded
+            h3 AU Office
+            address.s1
+              span
+                i.fa.fa-map-marker.fa-lg
+                | 100 Mainstreet Center, Sydney
+              span
+                i.fa.fa-phone.fa-lg
+                | +61 333 9296
+              span
+                i.fa.fa-envelope-o.fa-lg
+                a(href='mailto:contact@example.com') contact@example.com
+              span
+                i.fa.fa-file-pdf-o.fa-lg
+                a(href='#') Download Brochure
+// content close
+a#back-to-top(href='#')
