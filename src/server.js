@@ -15,7 +15,7 @@ app.use("/", globalRouter);
 app.use("/items", itemRouter);
 app.use("/users", userRouter);
 
-const PORT = 4000;
+const PORT = process.env.PORT || 7000;
 
 const handleListening = () =>
   console.log(`✅ Server listenting on port http://localhost:${PORT} 🚀`);
